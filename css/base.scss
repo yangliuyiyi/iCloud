@@ -1,0 +1,50 @@
+*{
+  padding:0;
+  margin:0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor:default;
+}
+input{
+  border: none;
+  margin:0;
+  padding:0;
+  background: transparent;
+  outline: none;
+}
+@mixin cube ($size){
+  width:$size;
+  height:$size;
+}
+@mixin matrix($width,$height){
+  width: $width;
+  height:$height;
+}
+@mixin circle($size){
+  width: $size;
+  height:$size;
+  border-radius:50%;
+}
+@mixin right-left{
+  position: absolute;
+  left:0;
+  right:0;
+  margin: auto;
+}
+@mixin top-bottom{
+  position: absolute;
+  top:0;
+  bottom:0;
+  margin: auto;
+}
+@mixin center{
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin: auto;
+}
+
+

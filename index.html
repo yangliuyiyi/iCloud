@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" ng-app="reminder">
+	<head>
+		<meta charset="UTF-8" />
+		<title>reminder</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="js/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body ng-controller="mainCtrl" ng-click="showcard=false">
+		<div class="main">
+			<div class="lists">
+				<div class="list-title">
+					<div class="logo"></div>
+					<div class="tip">提醒事项</div>
+					<div class="plus" ng-click="add($event);"></div>
+				</div>
+				<div class="plan">
+					<span class="logo"></span> 已计划
+				</div>
+				<ul class="plus-list">
+					<li class="plans" ng-repeat="v in database" ng-click="setcurrent($index)" ng-class="{active:v===currentlist}">
+						<span class="list-color" ng-class="v.theme"></span>
+						<input type="text" ng-model="v.name" />
+						<div class="xian"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="content">
+				<div class="search">
+					<div class="search-left">
+						<span class="search-icon"></span> 搜索所有提醒
+					</div>
+					<div class="search-right"></div>
+				</div>
+				<div class="content-inner"ng-class="currentlist.theme">
+					<div class='title' ng-init="showcard=false">
+						<span class="s-title" ng-bind="currentlist.name">
+					</span>
+						<div class="xuanxiang" ng-click="showcard=!showcard;cancel($event)">选项</div>
+
+						<div class="show-skin" ng-show="showcard" ng-click="cancel($event)">
+							<div class="contents">
+								<input type="text" ng-model="currentlist.name"ng-class="currentlist.theme" />
+								<p>列表颜色</p>
+								<ul class="color-list">
+									<!--<li ng-repeat="color in theme"ng-class="v.theme"ng-class="{active:v===currentlist.theme}" class="{{v}}" ng-click="currentlist.theme = v" >
+										<span ng-class="currentlist.theme"></span></li>-->
+											<li ng-class="{green:currentlist.theme==='green'}"><span class="green" ng-click="currentlist.theme='green'"></span></li>
+					<li ng-class="{yellow:currentlist.theme==='yellow'}"><span class="yellow" ng-click="currentlist.theme='yellow'"></span></li>
+					<li ng-class="{blue:currentlist.theme==='blue'}"><span class="blue" ng-click="currentlist.theme='blue'"></span></li>
+					<li ng-class="{orange:currentlist.theme==='orange'}"><span class="orange" ng-click="currentlist.theme='orange'"></span></li>
+					<li ng-class="{purple:currentlist.theme==='purple'}"><span class="purple" ng-click="currentlist.theme='purple'"></span></li>
+					<li ng-class="{brow:currentlist.theme==='brow'}"><span class="brow" ng-click="currentlist.theme='brow'"></span></li>
+					<li ng-class="{pink:currentlist.theme==='pink'}"><span class="pink" ng-click="currentlist.theme='pink'"></span></li>
+								</ul>
+								<span class="delete" ng-click="showcard=false;deletelist(currentlist.id)">删除</span>
+								<span class="cancel"ng-click="showcard=false">取消</span>
+								<span class="wancheng">完成</span>
+							</div>
+						</div>
+					</div>
+					<div class="finish">
+						<div class="xian"></div>
+						<div class="iswan"ng-click="isDone=true">
+							<span ></span> 已完成0项
+							
+						</div>
+						<ul class="item-list">
+							
+							<li class="item" ng-repeat="v in currentlist.todos|filter:{isDone:true}" ng-class="currentlist.theme">
+								
+								<div class="control touch" ng-click="v.isDone=!v.isDone"></div>
+								<input type="text" ng-model="v.name"/></span>
+								
+							</li>
+							<li class="item"  ng-class="currentlist.theme">
+								
+								<div class="control touch" ng-click="v.isDone=!v.isDone"></div>
+								<input type="text" ng-model="v.name"/></span>
+								
+							</li>
+						</ul>
+						<div class="newlist" ng-click="plus()">
+							新条目
+							<div class="xians"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

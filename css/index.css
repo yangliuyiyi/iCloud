@@ -1,0 +1,419 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: default; }
+
+input {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  outline: none; }
+
+.main .lists {
+  width: 380px;
+  background: #383836;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0; }
+  .main .lists .list-title {
+    width: 100%;
+    height: 44px;
+    border-bottom: 1px solid #1a1a1a;
+    position: relative; }
+    .main .lists .list-title .logo {
+      width: 56px;
+      height: 16px;
+      position: absolute;
+      left: 12px;
+      top: 14px;
+      background: url("../img/packed-5.png");
+      background-repeat: no-repeat;
+      background-position: 0 -588px; }
+    .main .lists .list-title .tip {
+      position: absolute;
+      left: 74px;
+      top: 0;
+      line-height: 44px;
+      font-size: 21px;
+      color: #999; }
+      .main .lists .list-title .tip:hover {
+        color: #ccc; }
+    .main .lists .list-title .plus {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      width: 23px;
+      height: 23px;
+      background-image: url("../img/packed-5.png");
+      background-repeat: no-repeat;
+      background-position: -23px -526px;
+      cursor: pointer; }
+  .main .lists .plan {
+    width: 100%;
+    height: 44px;
+    padding-left: 54px;
+    border-bottom: 1px solid #1a1a1a;
+    line-height: 44px;
+    font-size: 17px;
+    color: #fff;
+    position: relative; }
+    .main .lists .plan span {
+      position: absolute;
+      left: 10px;
+      top: 2px;
+      width: 40px;
+      height: 40px;
+      background-image: url("../img/packed-5.png");
+      background-position: 0 -359px;
+      background-repeat: no-repeat; }
+  .main .lists .plus-list .plans {
+    line-height: 44px;
+    height: 44px;
+    padding-left: 54px;
+    font-size: 17px;
+    color: #fff;
+    position: relative; }
+    .main .lists .plus-list .plans.active {
+      background: #2d2d2b;
+      overflow: hidden; }
+    .main .lists .plus-list .plans input {
+      display: inline;
+      font-size: 17px;
+      color: #fff; }
+    .main .lists .plus-list .plans .xian {
+      width: 85%;
+      height: 2px;
+      position: absolute;
+      bottom: -2px;
+      right: 0;
+      background: url("../img/packed-1.png"); }
+    .main .lists .plus-list .plans .list-color {
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      left: 22px;
+      top: 15px;
+      background-repeat: no-repeat;
+      background-image: url("../img/packed-5.png"); }
+      .main .lists .plus-list .plans .list-color.green {
+        background-position: -85px -571px; }
+      .main .lists .plus-list .plans .list-color.yellow {
+        background-position: -34px -571px; }
+      .main .lists .plus-list .plans .list-color.blue {
+        background-position: -68px -571px; }
+      .main .lists .plus-list .plans .list-color.orange {
+        background-position: -51px -571px; }
+      .main .lists .plus-list .plans .list-color.purple {
+        background-position: -17px -571px; }
+      .main .lists .plus-list .plans .list-color.brow {
+        background-position: -133px -549px; }
+      .main .lists .plus-list .plans .list-color.pink {
+        background-position: -102px -571px; }
+
+.main .content {
+  position: absolute;
+  left: 380px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background: url("../img/packed-4.png"); }
+  .main .content .search {
+    height: 44px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.35);
+    margin-bottom: 25px; }
+    .main .content .search .search-left {
+      float: left;
+      width: 50%;
+      height: 44px;
+      line-height: 44px;
+      font-size: 18px;
+      color: #bbb;
+      padding-left: 45px;
+      position: relative; }
+      .main .content .search .search-left .search-icon {
+        width: 24px;
+        height: 24px;
+        background: url(../img/packed-5.png) no-repeat -138px -359px;
+        position: absolute;
+        top: 11px;
+        left: 15px; }
+    .main .content .search .search-right {
+      float: right;
+      width: 50%;
+      height: 44px; }
+  .main .content .content-inner.green {
+    color: #49bf1f; }
+  .main .content .content-inner .show-skin .contents input.green {
+    color: #49bf1f; }
+  .main .content .finish .newlist.green {
+    color: #49bf1f; }
+  .main .content .content-inner .item-list .item.green input {
+    color: #49bf1f; }
+  .main .content .content-inner.yellow {
+    color: #e0ac00; }
+  .main .content .content-inner .show-skin .contents input.yellow {
+    color: #e0ac00; }
+  .main .content .finish .newlist.yellow {
+    color: #e0ac00; }
+  .main .content .content-inner .item-list .item.yellow input {
+    color: #e0ac00; }
+  .main .content .content-inner.blue {
+    color: #1badf8; }
+  .main .content .content-inner .show-skin .contents input.blue {
+    color: #1badf8; }
+  .main .content .finish .newlist.blue {
+    color: #1badf8; }
+  .main .content .content-inner .item-list .item.blue input {
+    color: #1badf8; }
+  .main .content .content-inner.orange {
+    color: #ff7f00; }
+  .main .content .content-inner .show-skin .contents input.orange {
+    color: #ff7f00; }
+  .main .content .finish .newlist.orange {
+    color: #ff7f00; }
+  .main .content .content-inner .item-list .item.orange input {
+    color: #ff7f00; }
+  .main .content .content-inner.purple {
+    color: #b14bc9; }
+  .main .content .content-inner .show-skin .contents input.purple {
+    color: #b14bc9; }
+  .main .content .finish .newlist.purple {
+    color: #b14bc9; }
+  .main .content .content-inner .item-list .item.purple input {
+    color: #b14bc9; }
+  .main .content .content-inner.brow {
+    color: #a2845e; }
+  .main .content .content-inner .show-skin .contents input.brow {
+    color: #a2845e; }
+  .main .content .finish .newlist.brow {
+    color: #a2845e; }
+  .main .content .content-inner .item-list .item.brow input {
+    color: #a2845e; }
+  .main .content .content-inner.pink {
+    color: #ff2968; }
+  .main .content .content-inner .show-skin .contents input.pink {
+    color: #ff2968; }
+  .main .content .finish .newlist.pink {
+    color: #ff2968; }
+  .main .content .content-inner .item-list .item.pink input {
+    color: #ff2968; }
+  .main .content .content-inner {
+    width: 100%;
+    height: auto; }
+    .main .content .content-inner .title {
+      position: relative;
+      height: 48px; }
+      .main .content .content-inner .title .s-title {
+        font-size: 40px;
+        line-height: 1.2;
+        padding-left: 28px;
+        float: left; }
+      .main .content .content-inner .title .xuanxiang {
+        float: right;
+        font-size: 19px;
+        cursor: pointer;
+        margin-right: 20px;
+        margin-top: 19px; }
+    .main .content .content-inner .show-skin {
+      width: 355px;
+      height: 226px;
+      position: absolute;
+      top: -45px;
+      right: 55px;
+      z-index: 10;
+      background: #fff; }
+      .main .content .content-inner .show-skin::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -4px;
+        top: -4px;
+        padding: 4px;
+        height: 100%;
+        width: 100%;
+        border-radius: 8px;
+        background: white;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0px 0 1px 1px rgba(0, 0, 0, 0.1); }
+      .main .content .content-inner .show-skin .contents {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px 0 0 20px; }
+        .main .content .content-inner .show-skin .contents input {
+          width: 314px;
+          height: 42px;
+          padding-left: 13px;
+          font-size: 25px;
+          border: 1px solid #ccc; }
+        .main .content .content-inner .show-skin .contents p {
+          line-height: 55px;
+          color: #000;
+          padding-left: 3px; }
+        .main .content .content-inner .show-skin .contents .color-list {
+          height: 48px;
+          border-bottom: 1px solid #ccc; }
+          .main .content .content-inner .show-skin .contents .color-list li.green {
+            background: url(../img/stylesheet-1.png) no-repeat;
+            background-position: 0 -33px;
+            background-repeat: no-repeat; }
+          .main .content .content-inner .show-skin .contents .color-list li.yellow {
+            background: url(../img/stylesheet-1.png) no-repeat;
+            background-position: 0 -99px;
+            background-repeat: no-repeat; }
+          .main .content .content-inner .show-skin .contents .color-list li.blue {
+            background: url(../img/stylesheet-1.png) no-repeat;
+            background-position: 0 -66px;
+            background-repeat: no-repeat; }
+          .main .content .content-inner .show-skin .contents .color-list li.orange {
+            background: url(../img/stylesheet-1.png) no-repeat;
+            background-position: 0 -198px;
+            background-repeat: no-repeat; }
+          .main .content .content-inner .show-skin .contents .color-list li.purple {
+            background: url(../img/stylesheet-1.png) no-repeat;
+            background-position: 0 -0px;
+            background-repeat: no-repeat; }
+          .main .content .content-inner .show-skin .contents .color-list li.brow {
+            background: url(../img/stylesheet-1.png) no-repeat;
+            background-position: 0 -132px;
+            background-repeat: no-repeat; }
+          .main .content .content-inner .show-skin .contents .color-list li.pink {
+            background: url(../img/stylesheet-1.png) no-repeat;
+            background-position: 0 -165px;
+            background-repeat: no-repeat; }
+          .main .content .content-inner .show-skin .contents .color-list li {
+            width: 33px;
+            height: 33px;
+            float: left;
+            margin-left: 10px; }
+            .main .content .content-inner .show-skin .contents .color-list li span {
+              width: 25px;
+              height: 25px;
+              margin: 4px 0 0 4px;
+              display: block;
+              background: url(../img/stylesheet-1.png) no-repeat;
+              background-repeat: no-repeat; }
+            .main .content .content-inner .show-skin .contents .color-list li span.green {
+              background-position: 0 -256px; }
+            .main .content .content-inner .show-skin .contents .color-list li span.yellow {
+              background-position: 0 -306px; }
+            .main .content .content-inner .show-skin .contents .color-list li span.blue {
+              background-position: 0 -281px; }
+            .main .content .content-inner .show-skin .contents .color-list li span.orange {
+              background-position: 0 -381px; }
+            .main .content .content-inner .show-skin .contents .color-list li span.purple {
+              background-position: 0 -231px; }
+            .main .content .content-inner .show-skin .contents .color-list li span.brow {
+              background-position: 0 -331px; }
+            .main .content .content-inner .show-skin .contents .color-list li span.pink {
+              background-position: 0 -356px; }
+          .main .content .content-inner .show-skin .contents .color-list li:first-child {
+            margin-left: 0; }
+      .main .content .content-inner .show-skin .delete {
+        font-size: 18px;
+        color: red;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        cursor: pointer; }
+      .main .content .content-inner .show-skin .cancel {
+        position: absolute;
+        left: 65%;
+        bottom: 20px;
+        font-size: 18px;
+        color: blue;
+        padding-right: 20px;
+        border-right: 1px solid #ccc;
+        cursor: pointer; }
+      .main .content .content-inner .show-skin .wancheng {
+        position: absolute;
+        right: 10px;
+        bottom: 20px;
+        font-size: 18px;
+        color: blue;
+        font-weight: bolder;
+        cursor: pointer; }
+  .main .content .finish {
+    padding: 6px 0 0;
+    position: relative; }
+    .main .content .finish .xian {
+      height: 2px;
+      width: 98%;
+      position: absolute;
+      top: 2px;
+      right: 0;
+      background: url("../img/packed-3.png"); }
+    .main .content .finish .iswan {
+      height: 52px;
+      line-height: 52px;
+      color: #aaa;
+      font-size: 19px;
+      padding-left: 58px;
+      position: relative;
+      border-bottom: 1px solid #d1d1d1; }
+      .main .content .finish .iswan span {
+        width: 23px;
+        height: 23px;
+        position: absolute;
+        left: 25px;
+        top: 14px;
+        background: url(../img/packed-5.png) no-repeat -92px -526px; }
+      .main .content .finish .iswan span.active {
+        background: url(../img/packed-5.png) no-repeat -69px -526px; }
+    .main .content .finish .item-list .item {
+      height: 52px;
+      line-height: 52px;
+      font-size: 19px;
+      padding-left: 58px;
+      position: relative;
+      border-bottom: 1px solid #d1d1d1; }
+      .main .content .finish .item-list .item input {
+        width: 80%;
+        height: 100%;
+        font-size: 18px;
+        line-height: 52px; }
+      .main .content .finish .item-list .item .control {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 10px;
+        left: 21px;
+        display: block; }
+      .main .content .finish .item-list .item.green .touch {
+        background: url("../img/packed-5.png") -42px -359px; }
+      .main .content .finish .item-list .item.yellow .touch {
+        background: url("../img/packed-5.png") -136px -267px; }
+      .main .content .finish .item-list .item.blue .touch {
+        background: url("../img/packed-5.png") -136px -167px; }
+      .main .content .finish .item-list .item.blue.orange .touch {
+        background: url(../img/packed-5.png) 0 -433px; }
+      .main .content .finish .item-list .item.blue.purple .touch {
+        background: url(../img/packed-5.png)-64px-465px; }
+      .main .content .finish .item-list .item.blue.brow .touch {
+        background: url(../img/packed-5.png)-96px-433px; }
+      .main .content .finish .item-list .item.blue.pink .touch {
+        background: url(../img/packed-5.png)-128px-401px; }
+    .main .content .finish .newlist {
+      height: 52px;
+      line-height: 52px;
+      color: #aaa;
+      font-size: 19px;
+      padding-left: 58px;
+      position: relative; }
+      .main .content .finish .newlist .xians {
+        height: 2px;
+        width: 98%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: url("../img/packed-3.png"); }
